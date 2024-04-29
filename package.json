@@ -1,0 +1,23 @@
+{
+	"type": "module",
+	"main": "p7d.js",
+	"version": "1.0",
+	"description": "Some basic Baical's P7Dump parser in JS",
+	"private": false,
+	"dependencies": {},
+	"devDependencies": {
+		"node-fetch": "^3.3.2",
+		"fast-printf": "^1.6.9",
+		"patch-package": "^8.0.0"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/igor725/p7d.js"
+	},
+	"keywords": [
+		"baical",
+		"parser",
+		"p7d"
+	]
+}
