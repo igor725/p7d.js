@@ -27,7 +27,12 @@ const _tparse = (data) => {
 		'features-audio': (str) => str.indexOf('Needs library libSceNgs2') !== -1,
 		'engine-unity': (str) => (str.indexOf('Il2CppUserAssemblies.prx') !== -1) || (str.indexOf('MonoAssembliesPS4.prx') !== -1),
 		'engine-gamemaker': (str) => (str.indexOf('YoYo Games PS4 Runner') !== -1),
-		'guest-exception': (str, verb) => verb > 3 && ((str.indexOf('Exception 0x') !== -1) || (str.indexOf('Exception: reason') !== -1)),
+		'guest-exception': (str, verb) => verb > 3 &&
+			(
+				(str.indexOf('Exception 0x') !== -1) ||
+				(str.indexOf('Exception: reason') !== -1) ||
+				(str.indexOf('Access violation: ') !== -1)
+			),
 		'shader-gen': (str) => str.indexOf('Couldn\'t generate shader') !== -1,
 		'allocator': (str) => (str.indexOf('VirtualProtect() failed') !== -1) || (str.indexOf('CommitError|') !== -1),
 		'homebrew': (str) => (str.indexOf('] TITLE_ID| size:') !== -1) && (str.indexOf('(string):CUSA') == -1)
