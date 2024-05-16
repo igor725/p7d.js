@@ -1,6 +1,8 @@
 {
+	"name": "p7d.js",
 	"type": "module",
 	"main": "p7d.js",
+	"namespace": "@igor725",
 	"version": "1.0.0",
 	"description": "Some basic Baical's P7Dump parser in JS",
 	"private": false,
