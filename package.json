@@ -6,10 +6,10 @@
 	"version": "1.0.0",
 	"description": "Some basic Baical's P7Dump parser in JS",
 	"private": false,
-	"dependencies": {},
 	"devDependencies": {
-		"node-fetch": "^3.3.2",
 		"fast-printf": "^1.6.9",
+		"node-fetch": "^3.3.2",
+		"octokit": "^4.0.2",
 		"patch-package": "^8.0.0"
 	},
 	"license": "MIT",
