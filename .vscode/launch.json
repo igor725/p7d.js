@@ -8,7 +8,11 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}\\example\\main.js"
+			"env": {
+				"GITHUB_TOKEN": "${config:p7djs.gh_token}",
+				"GITHUB_HOOK_SECRET": "${config:p7djs.ghwh_secret}"
+			},
+			"program": "${workspaceFolder}\\example\\bot.js"
 		}
 	]
 }
