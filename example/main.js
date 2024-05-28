@@ -23,6 +23,7 @@ const _tparse = (data) => {
 
 	const labels = [];
 	const searchers = {
+		'missing-symbol': (str) => str.indexOf('Missing Symbol|') !== -1,
 		'userland-thread': (str) => str.indexOf('Needs library libSceUlt') !== -1,
 		'features-audio': (str) => str.indexOf('Needs library libSceNgs2') !== -1,
 		'engine-unity': (str) => (str.indexOf('Il2CppUserAssemblies.prx') !== -1) || (str.indexOf('MonoAssembliesPS4.prx') !== -1),
